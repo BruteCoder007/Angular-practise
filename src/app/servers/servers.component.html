@@ -1,4 +1,7 @@
 <!-- <app-server ></app-server>
 <app-server class="text-capitalize"></app-server> -->
 <!-- <div app-server></div> -->
-<div class="app-server"></div>
+<button class="btn btn-primary" (click)="createServers()">Server</button>
+<!-- <app-servers></app-servers> -->
+<div app-servers></div>
+<app-servers *ngFor="let server of servernames"></app-servers>

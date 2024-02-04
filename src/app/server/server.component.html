@@ -1,3 +1,11 @@
 <h3 >This is my server component</h3>
 <br>
 <h3 >hello</h3>
+<button class="btn btn-primary" [disabled]="!bool" (click)="handler()">Create server</button>
+<p [ngStyle]="{backgroundColor : getColor()}" [ngClass]="{online : status === 'online'}">{{isdisable}} , servers status : {{status}} </p>
+<input type='text' (input)="onchange($event)" class="form-control"/>
+<input type="text" [(ngModel)]="variable" placeholder="Two way binding"     />
+<p>{{variable}}</p>
+<!-- //ngIf  -->
+
+<p *ngIf="isTime()" style="background-color: aliceblue; font-size: large;"> The time is greater than 12</p>
